@@ -2,8 +2,9 @@ a = 5
 
 # Puts is the equivalent to console.log or print 
 puts a
-
-############################ Types of Variables
+########################################################
+# Types of Variables
+########################################################
     # Integer just a whole number
         puts 5
     # Double or Float is number with decimal
@@ -13,11 +14,14 @@ puts a
     # Booleans
         puts 5 > 5 # will return true or false
 
-
-############################ String concatenation 
+########################################################
+# String concatenation 
+########################################################
 puts "this is " + "cool" 
 
-############################ puts "this is " + a + "cool"
+############################
+# puts "this is " + a + "cool"
+############################
     # This will error as variable "a" is not a string. 
     # RUBY IS TYPE SENSITIVE 
 
