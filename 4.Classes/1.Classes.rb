@@ -41,17 +41,25 @@ puts sparky.ageGetter # 3
 ########################################################
 
 class Terrier < Dog
+
+    def initialize(name, age, color)
+        super(name, age)
+        @color = color
+    end
+
     # OVERRRIDE
     # Overrides the original bark function
-
-    
-
     def bark
         puts "Ruff!"
     end
+
+    def colorGetter
+        return @color
+    end
 end
 
-chip = Terrier.new("Chip", 2)
+chip = Terrier.new("Chip", 2, "Black")
 chip.bark # Ruff! (override the original bark funciton)
-puts chip.nameGetter
-puts chip.ageGetter
+puts chip.nameGetter # Chip
+puts chip.ageGetter # 2
+puts chip.colorGetter # Black
